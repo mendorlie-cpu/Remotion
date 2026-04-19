@@ -1,0 +1,22 @@
+{
+  "name": "wellness-tiktok",
+  "version": "1.0.0",
+  "description": "1-minute wellness TikTok video made with Remotion",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render",
+    "render": "remotion render WellnessTikTok out/wellness.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.290",
+    "remotion": "4.0.290"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.0.0"
+  },
+  "remotion": {
+    "entryPoint": "src/index.ts"
+  }
+}
