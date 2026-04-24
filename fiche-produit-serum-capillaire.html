@@ -1,0 +1,207 @@
+<style>
+  .sp-hero { text-align: center; padding: 24px 0; background: linear-gradient(135deg, #1a1a2e, #16213e); border-radius: 16px; margin-bottom: 32px; }
+  .sp-badge { display: inline-block; background: #e8c46a; color: #1a1a2e; font-weight: 700; font-size: 12px; padding: 4px 14px; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px; }
+  .sp-title { font-size: 30px; font-weight: 800; color: #fff; margin: 0 0 10px; }
+  .sp-subtitle { font-size: 16px; color: #aab4c8; margin: 0 0 18px; }
+  .sp-stars { color: #e8c46a; font-size: 20px; }
+  .sp-reviews { font-size: 13px; color: #aab4c8; margin-left: 8px; }
+  .sp-section { margin: 32px 0; }
+  .sp-section h2 { font-size: 20px; font-weight: 700; color: #1a1a2e; border-left: 4px solid #e8c46a; padding-left: 12px; margin-bottom: 16px; }
+  .sp-benefits { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+  .sp-card { background: #f8f6f0; border-radius: 12px; padding: 20px; text-align: center; }
+  .sp-card .icon { font-size: 34px; margin-bottom: 10px; }
+  .sp-card strong { display: block; font-size: 15px; color: #1a1a2e; margin-bottom: 6px; }
+  .sp-card p { font-size: 13px; color: #666; margin: 0; }
+  .sp-features ul { list-style: none; padding: 0; margin: 0; }
+  .sp-features li { padding: 10px 0; border-bottom: 1px solid #eee; font-size: 15px; color: #333; display: flex; align-items: center; gap: 10px; }
+  .sp-features li:last-child { border-bottom: none; }
+  .sp-features li::before { content: "✔"; color: #27ae60; font-weight: 700; flex-shrink: 0; }
+  .sp-ingredients { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+  .sp-ingredient { border: 1px solid #e8c46a; border-radius: 10px; padding: 16px; }
+  .sp-ingredient strong { display: block; color: #1a1a2e; font-size: 14px; margin-bottom: 4px; }
+  .sp-ingredient p { font-size: 13px; color: #666; margin: 0; }
+  .sp-specs table { width: 100%; border-collapse: collapse; }
+  .sp-specs td { padding: 10px 14px; font-size: 14px; border-bottom: 1px solid #eee; }
+  .sp-specs td:first-child { font-weight: 600; color: #444; width: 40%; }
+  .sp-how-to ol { padding-left: 20px; }
+  .sp-how-to li { padding: 8px 0; font-size: 15px; color: #444; line-height: 1.6; }
+  .sp-testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .sp-testimonial { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; }
+  .sp-testimonial .stars { color: #e8c46a; font-size: 15px; margin-bottom: 8px; }
+  .sp-testimonial p { font-size: 14px; color: #555; font-style: italic; margin: 0 0 10px; }
+  .sp-testimonial strong { font-size: 13px; color: #888; }
+  .sp-cta-box { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #fff; border-radius: 16px; padding: 32px; text-align: center; }
+  .sp-cta-box h2 { color: #e8c46a; font-size: 22px; margin-bottom: 12px; }
+  .sp-cta-box p { color: #aab4c8; font-size: 15px; margin-bottom: 20px; }
+  .sp-cta-box ul { list-style: none; padding: 0; display: inline-block; text-align: left; margin: 0 0 24px; }
+  .sp-cta-box ul li { color: #fff; font-size: 14px; padding: 4px 0; }
+  .sp-cta-box ul li::before { content: "✔ "; color: #e8c46a; }
+  .sp-duo-box { background: #f8f6f0; border-radius: 14px; padding: 24px; text-align: center; border: 2px dashed #e8c46a; }
+  .sp-duo-box h3 { color: #1a1a2e; margin-bottom: 8px; }
+  .sp-duo-box p { font-size: 14px; color: #666; }
+  .sp-duo-box .saving { font-size: 18px; font-weight: 800; color: #e05c5c; margin-top: 10px; }
+</style>
+
+<!-- HERO -->
+<div class="sp-hero">
+  <div class="sp-badge">⭐ Coup de cœur clients</div>
+  <h1 class="sp-title">Sérum Capillaire LuxeOil Repair+</h1>
+  <p class="sp-subtitle">Répare, nourrit et sublime en 60 secondes — résultats visibles dès la 1ʳᵉ application</p>
+  <div>
+    <span class="sp-stars">★★★★★</span>
+    <span class="sp-reviews">4,8/5 — 1 892 avis vérifiés</span>
+  </div>
+</div>
+
+<!-- AVANTAGES CLÉS -->
+<div class="sp-section">
+  <h2>Ce que le sérum fait pour vous</h2>
+  <div class="sp-benefits">
+    <div class="sp-card">
+      <div class="icon">💧</div>
+      <strong>Hydratation 72h</strong>
+      <p>Formule à libération lente pour une hydratation qui dure toute la journée</p>
+    </div>
+    <div class="sp-card">
+      <div class="icon">🔬</div>
+      <strong>Anti-casse</strong>
+      <p>Renforce la fibre capillaire jusqu'à 97 % contre la casse*</p>
+    </div>
+    <div class="sp-card">
+      <div class="icon">✨</div>
+      <strong>Brillance miroir</strong>
+      <p>Referme les écailles pour un éclat intense et durable</p>
+    </div>
+    <div class="sp-card">
+      <div class="icon">🌬️</div>
+      <strong>Sans résidu</strong>
+      <p>Texture légère, non grasse — cheveux fluides et naturels</p>
+    </div>
+    <div class="sp-card">
+      <div class="icon">🌿</div>
+      <strong>95 % naturel</strong>
+      <p>Formule vegan, sans silicone, sans sulfate, sans paraben</p>
+    </div>
+  </div>
+  <p style="font-size:11px;color:#999;margin-top:12px;">*Test clinique réalisé sur 50 participantes sur 4 semaines.</p>
+</div>
+
+<!-- DESCRIPTION -->
+<div class="sp-section">
+  <h2>Description du produit</h2>
+  <p style="font-size:15px;color:#444;line-height:1.8;">
+    Le <strong>LuxeOil Repair+</strong> est bien plus qu'un sérum capillaire — c'est un traitement de haute précision formulé par des experts trichologues. Enrichi en <strong>huile d'argan bio</strong>, <strong>kératine végétale</strong> et <strong>acide hyaluronique capillaire</strong>, il pénètre instantanément dans la fibre pour la réparer de l'intérieur, lisser les frisottis et révéler un éclat exceptionnel.
+  </p>
+  <p style="font-size:15px;color:#444;line-height:1.8;">
+    Adapté aux cheveux secs, abîmés, colorés ou traités chimiquement, il convient également aux cheveux fins grâce à sa texture ultralégoière qui ne alourdit pas les racines. En quelques gouttes seulement, vos cheveux retrouvent souplesse, brillance et vitalité.
+  </p>
+</div>
+
+<!-- INGRÉDIENTS STAR -->
+<div class="sp-section">
+  <h2>Ingrédients stars</h2>
+  <div class="sp-ingredients">
+    <div class="sp-ingredient">
+      <strong>🌰 Huile d'argan bio (Maroc)</strong>
+      <p>Nourrit en profondeur, apporte brillance et protège des agressions thermiques jusqu'à 230°C.</p>
+    </div>
+    <div class="sp-ingredient">
+      <strong>🧬 Kératine végétale</strong>
+      <p>Reconstruit la fibre capillaire abîmée et réduit la porosité pour des cheveux plus forts.</p>
+    </div>
+    <div class="sp-ingredient">
+      <strong>💧 Acide hyaluronique capillaire</strong>
+      <p>Retient l'humidité dans le cheveu pour une hydratation longue durée sans effet lourd.</p>
+    </div>
+    <div class="sp-ingredient">
+      <strong>🌸 Extrait de camélia</strong>
+      <p>Adoucit, lisse les écailles et laisse un voile parfumé délicat et élégant.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CARACTÉRISTIQUES -->
+<div class="sp-section sp-features">
+  <h2>Caractéristiques</h2>
+  <ul>
+    <li>Formule vegan — aucun ingrédient d'origine animale</li>
+    <li>Sans silicone, sans sulfate, sans paraben, sans alcool</li>
+    <li>Protection thermique jusqu'à 230°C (lisseur, sèche-cheveux)</li>
+    <li>Convient à tous types de cheveux — fins, épais, bouclés, colorés</li>
+    <li>Testé dermatologiquement — hypoallergénique</li>
+    <li>Flacon en verre recyclé avec pompe de précision</li>
+    <li>Fabriqué en France — laboratoire certifié ISO 22716</li>
+    <li>Non testé sur les animaux — certifié Cruelty-Free</li>
+  </ul>
+</div>
+
+<!-- SPÉCIFICATIONS -->
+<div class="sp-section sp-specs">
+  <h2>Spécifications</h2>
+  <table>
+    <tr><td>Contenance</td><td>50 ml</td></tr>
+    <tr><td>Texture</td><td>Huile sérum légère</td></tr>
+    <tr><td>Parfum</td><td>Fleur de camélia & bois de santal</td></tr>
+    <tr><td>Utilisation</td><td>Cheveux secs ou humides</td></tr>
+    <tr><td>Fréquence</td><td>Quotidienne ou selon besoin</td></tr>
+    <tr><td>Flacon</td><td>Verre recyclé + pompe de précision</td></tr>
+    <tr><td>Certification</td><td>Vegan, Cruelty-Free, ISO 22716</td></tr>
+    <tr><td>Fabriqué en</td><td>France</td></tr>
+  </table>
+</div>
+
+<!-- COMMENT UTILISER -->
+<div class="sp-section sp-how-to">
+  <h2>Comment l'utiliser</h2>
+  <ol>
+    <li><strong>Sur cheveux humides :</strong> Appuyez 2 à 3 fois sur la pompe, frottez dans les paumes et appliquez sur les longueurs et pointes avant de coiffer.</li>
+    <li><strong>Sur cheveux secs :</strong> 1 à 2 pressions suffisent pour dompter les frisottis ou redonner de la brillance en cours de journée.</li>
+    <li><strong>Avant chaleur :</strong> Appliquez avant le sèche-cheveux ou le lisseur pour une protection thermique optimale jusqu'à 230°C.</li>
+    <li><strong>Soin de nuit :</strong> Appliquez généreusement sur les pointes comme masque de nuit pour une réparation intensive.</li>
+  </ol>
+</div>
+
+<!-- PRODUITS DUO -->
+<div class="sp-section">
+  <div class="sp-duo-box">
+    <h3>💡 L'association parfaite</h3>
+    <p>Associez le <strong>LuxeOil Repair+</strong> avec notre <strong>Brosse GlossShine Pro 360°</strong> pour un résultat salon complet à domicile.</p>
+    <div class="saving">Duo disponible — économisez 15 % avec le pack capillaire</div>
+  </div>
+</div>
+
+<!-- AVIS CLIENTS -->
+<div class="sp-section">
+  <h2>Ce que disent nos clientes</h2>
+  <div class="sp-testimonials">
+    <div class="sp-testimonial">
+      <div class="stars">★★★★★</div>
+      <p>"Mes cheveux colorés étaient vraiment abîmés. Après 2 semaines d'utilisation, ils sont transformés — brillants et solides. Un miracle en flacon !"</p>
+      <strong>— Céline R., Nantes</strong>
+    </div>
+    <div class="sp-testimonial">
+      <div class="stars">★★★★★</div>
+      <p>"Enfin un sérum qui ne colle pas ! Texture parfaite, parfum discret et mes cheveux fins ne sont plus alourdis. Je rachète !"</p>
+      <strong>— Inès B., Strasbourg</strong>
+    </div>
+    <div class="sp-testimonial">
+      <div class="stars">★★★★★</div>
+      <p>"Je l'utilise avant chaque brushing et mes cheveux brillent comme jamais. Et la protection thermique est vraiment efficace."</p>
+      <strong>— Fatou D., Marseille</strong>
+    </div>
+  </div>
+</div>
+
+<!-- CTA FINAL -->
+<div class="sp-section">
+  <div class="sp-cta-box">
+    <h2>Transformez vos cheveux dès aujourd'hui</h2>
+    <p>Rejoignez + de 30 000 clientes qui ont retrouvé des cheveux sains et brillants.</p>
+    <ul>
+      <li>Livraison gratuite dès 30 €</li>
+      <li>Retours gratuits sous 30 jours</li>
+      <li>Satisfaite ou remboursée</li>
+      <li>Paiement 100 % sécurisé</li>
+    </ul>
+  </div>
+</div>
